@@ -3,6 +3,7 @@ export interface Recommendation {
   name: string;
   role: string;
   initials: string;
+  source?: string;
 }
 
 export const recommendations: Recommendation[] = [
@@ -12,6 +13,7 @@ export const recommendations: Recommendation[] = [
     name: "Shohei Takarabe",
     role: "CEO, TEN-X Co., Ltd.",
     initials: "ST",
+    source: "Reference available on request",
   },
   {
     quote:
@@ -19,6 +21,7 @@ export const recommendations: Recommendation[] = [
     name: "Eugene Jun",
     role: "Director, JUNCAFE OPERA PTY LTD",
     initials: "EJ",
+    source: "Reference available on request",
   },
   {
     quote:
@@ -26,5 +29,6 @@ export const recommendations: Recommendation[] = [
     name: "Junseop Kim",
     role: "Assistant Manager, Genoray Flexlab",
     initials: "JK",
+    source: "Reference available on request",
   },
 ];

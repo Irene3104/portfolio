@@ -59,8 +59,8 @@ export default function Contact() {
           className="mb-10 max-w-[520px] text-[1.25rem] leading-[1.7] text-text-secondary max-md:text-[0.9rem] max-md:mb-8"
         >
           <p>
-            Based in Sydney, working remotely with teams across the globe. Open
-            to mid-level full-stack software roles — let&apos;s connect.
+            Based in Sydney, open to remote and hybrid. I bring full-stack delivery,
+            AI integration, and trilingual communication to teams building impactful products.
           </p>
         </ScrollReveal>
 

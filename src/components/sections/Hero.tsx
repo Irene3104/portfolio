@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
-import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useMagnetic } from "@/hooks/useMagnetic";
 import { GithubIcon, LinkedInIcon, MailIcon, DownloadIcon, BoxIcon } from "@/components/icons";
 
@@ -88,7 +87,6 @@ function CtaCard({
           : "bg-gradient-to-br from-[#e879f9] to-[#f0abfc] text-[#1a0a2e]"
       }`}
     >
-      {/* Decorative overlay */}
       <span
         className="pointer-events-none absolute inset-0 rounded-[18px]"
         style={{
@@ -148,97 +146,87 @@ export default function Hero() {
       <div className="mx-auto flex w-full max-w-[var(--max-w)] items-center justify-center gap-[72px] max-lg:gap-12 max-md:flex-col max-md:gap-8 max-md:text-center min-[1400px]:gap-[90px]">
         {/* Profile Card */}
         <div className="shrink-0 max-md:flex max-md:w-full max-md:justify-center">
-          <ScrollReveal delay={0}>
-            <div
-              ref={cardRef}
-              className="relative w-[360px] overflow-hidden rounded-3xl border border-accent-1/12 bg-bg-card p-8 px-7 text-center transition-transform duration-300 hover:-translate-y-1 max-lg:w-[320px] max-lg:p-7 max-lg:px-[22px] max-md:w-full max-md:max-w-[360px] max-[400px]:px-4 max-[400px]:py-6 min-[1400px]:w-[400px]"
-            >
-              {/* Gradient border overlay */}
-              <span className="pointer-events-none absolute inset-[-1px] -z-10 rounded-3xl bg-gradient-to-br from-accent-1/20 via-transparent to-accent-2/20" />
+          <div
+            ref={cardRef}
+            className="relative w-[360px] overflow-hidden rounded-3xl border border-accent-1/12 bg-bg-card p-8 px-7 text-center transition-transform duration-300 hover:-translate-y-1 max-lg:w-[320px] max-lg:p-7 max-lg:px-[22px] max-md:w-full max-md:max-w-[360px] max-[400px]:px-4 max-[400px]:py-6 min-[1400px]:w-[400px]"
+          >
+            <span className="pointer-events-none absolute inset-[-1px] -z-10 rounded-3xl bg-gradient-to-br from-accent-1/20 via-transparent to-accent-2/20" />
 
-              {/* Profile image */}
-              <div className="relative mx-auto mb-7 h-[260px] w-[260px] max-lg:h-[220px] max-lg:w-[220px] max-md:h-[200px] max-md:w-[200px] max-[400px]:h-[160px] max-[400px]:w-[160px] min-[1400px]:h-[280px] min-[1400px]:w-[280px]">
-                <span className="absolute inset-[-8px] animate-spin-slow rounded-full border-2 border-dashed border-accent-1 opacity-50" />
-                <Image
-                  src="/images/profile.webp"
-                  alt="Seoyoon Kim"
-                  fill
-                  className="rounded-full border-[3px] border-accent-1/20 object-cover object-[center_20%]"
-                  priority
-                />
-              </div>
-
-              <div className="font-heading text-2xl font-semibold">
-                Seoyoon Kim{" "}
-                <span className="ml-1.5 inline-block h-2.5 w-2.5 animate-pulse-badge rounded-full bg-accent-2 shadow-[0_0_8px_var(--accent-2)]" />
-              </div>
-
-              <p className="mx-2 my-3.5 text-[1.1rem] leading-[1.7] text-text-secondary">
-                Full-stack engineer shipping production systems across enterprise
-                finance, medical imaging, and workforce management.
-              </p>
-
-              <div className="mb-4.5 flex flex-wrap justify-center gap-2">
-                {["Korean (Native)", "Japanese (Business)", "English (Professional)"].map((lang) => (
-                  <span
-                    key={lang}
-                    className="rounded-full bg-accent-1/8 px-3.5 py-1.5 text-[0.8rem] font-medium tracking-[0.5px] text-accent-3"
-                  >
-                    {lang}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex justify-center gap-3">
-                {[
-                  { href: "https://github.com/Irene3104", icon: <GithubIcon />, title: "GitHub" },
-                  { href: "https://linkedin.com/in/seoyoon-irenekim", icon: <LinkedInIcon />, title: "LinkedIn" },
-                  { href: "mailto:sjyono@gmail.com", icon: <MailIcon size={16} />, title: "Email" },
-                ].map((social) => (
-                  <a
-                    key={social.title}
-                    href={social.href}
-                    target={social.href.startsWith("mailto") ? undefined : "_blank"}
-                    rel={social.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-                    title={social.title}
-                    className="flex h-9 w-9 items-center justify-center rounded-[10px] border border-accent-1/20 text-text-secondary no-underline transition-all duration-300 hover:border-accent-1 hover:text-accent-1 hover:shadow-[var(--neon-glow)]"
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
+            <div className="relative mx-auto mb-7 h-[260px] w-[260px] max-lg:h-[220px] max-lg:w-[220px] max-md:h-[200px] max-md:w-[200px] max-[400px]:h-[160px] max-[400px]:w-[160px] min-[1400px]:h-[280px] min-[1400px]:w-[280px]">
+              <span className="absolute inset-[-8px] animate-spin-slow rounded-full border-2 border-dashed border-accent-1 opacity-50" />
+              <Image
+                src="/images/profile.webp"
+                alt="Seoyoon Kim"
+                fill
+                className="rounded-full border-[3px] border-accent-1/20 object-cover object-[center_20%]"
+                priority
+              />
             </div>
-          </ScrollReveal>
+
+            <div className="font-heading text-2xl font-semibold">
+              Seoyoon Kim{" "}
+              <span className="ml-1.5 inline-block h-2.5 w-2.5 animate-pulse-badge rounded-full bg-accent-2 shadow-[0_0_8px_var(--accent-2)]" />
+            </div>
+
+            <p className="mx-2 my-3.5 text-[1.1rem] leading-[1.7] text-text-secondary">
+              Full-stack engineer building production systems across enterprise
+              finance, medical data, and workforce management.
+            </p>
+
+            <div className="mb-4.5 flex flex-wrap justify-center gap-2">
+              {["Korean (Native)", "Japanese (Business)", "English (Professional)"].map((lang) => (
+                <span
+                  key={lang}
+                  className="rounded-full bg-accent-1/8 px-3.5 py-1.5 text-[0.8rem] font-medium tracking-[0.5px] text-accent-3"
+                >
+                  {lang}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex justify-center gap-3">
+              {[
+                { href: "https://github.com/Irene3104", icon: <GithubIcon />, title: "GitHub" },
+                { href: "https://linkedin.com/in/seoyoon-irenekim", icon: <LinkedInIcon />, title: "LinkedIn" },
+                { href: "mailto:sjyono@gmail.com", icon: <MailIcon size={16} />, title: "Email" },
+              ].map((social) => (
+                <a
+                  key={social.title}
+                  href={social.href}
+                  target={social.href.startsWith("mailto") ? undefined : "_blank"}
+                  rel={social.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+                  title={social.title}
+                  className="flex h-9 w-9 items-center justify-center rounded-[10px] border border-accent-1/20 text-text-secondary no-underline transition-all duration-300 hover:border-accent-1 hover:text-accent-1 hover:shadow-[var(--neon-glow)]"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Hero Right */}
         <div className="max-w-[560px] flex-1 max-md:max-w-full max-md:text-center">
           <h1 className="font-heading text-[clamp(3.2rem,6vw,6rem)] font-bold leading-[1.05] mb-5 max-lg:text-[clamp(2.6rem,5vw,4rem)] max-md:text-[clamp(2.4rem,10vw,3.4rem)] max-md:mb-4 max-[400px]:text-[2.2rem]">
-            <ScrollReveal as="span" delay={180} className="!block">
-              SOFTWARE
-            </ScrollReveal>
-            <ScrollReveal as="span" delay={360} className="!block gradient-text">
-              ENGINEER
-            </ScrollReveal>
+            <span className="block">SOFTWARE</span>
+            <span className="block gradient-text">ENGINEER</span>
           </h1>
 
-          <ScrollReveal delay={540} className="mb-9 max-w-[520px] text-[1.25rem] leading-[1.8] text-text-secondary max-md:mx-auto max-md:max-w-full max-md:text-[1.05rem] max-md:mb-7 max-md:text-center">
-            <p>
-              Full-stack engineer with production experience in enterprise
-              finance, medical imaging, and workforce systems. Currently building
-              an AI-integrated accounting platform at TEN-X (Japan) while
-              maintaining Bee-Time, a workforce app live across 5 retail stores in
-              Sydney.
-            </p>
-          </ScrollReveal>
+          <p className="mb-9 max-w-[520px] text-[1.25rem] leading-[1.8] text-text-secondary max-md:mx-auto max-md:max-w-full max-md:text-[1.05rem] max-md:mb-7 max-md:text-center">
+            Full-stack engineer with production experience in enterprise
+            finance, medical data systems, and workforce tools. Currently building
+            an AI-powered accounting platform at TEN-X (Japan) while
+            maintaining Bee-Time, a workforce app serving 5 retail stores in
+            Sydney.
+          </p>
 
-          <ScrollReveal delay={720} className="mb-9 flex gap-10 max-lg:gap-8 max-md:justify-center max-md:gap-6 max-md:mb-7 max-[400px]:gap-4">
+          <div className="mb-9 flex gap-10 max-lg:gap-8 max-md:justify-center max-md:gap-6 max-md:mb-7 max-[400px]:gap-4">
             <CountUpStat target={3} prefix="+" label="Years of<br>Experience" />
             <CountUpStat target={125} prefix="+" label="Active<br>Product Users" />
             <CountUpStat target={25} prefix="+" suffix="%" label="Revenue<br>Growth Driven" />
-          </ScrollReveal>
+          </div>
 
-          <ScrollReveal delay={900} className="flex gap-3.5 max-md:flex-col max-md:gap-3">
+          <div className="flex gap-3.5 max-md:flex-col max-md:gap-3">
             <CtaCard
               href="/resume.pdf"
               variant="purple"
@@ -254,7 +242,7 @@ export default function Hero() {
               text="View Projects<br>and Case Studies"
               arrowContent={<span>&rarr;</span>}
             />
-          </ScrollReveal>
+          </div>
         </div>
       </div>
     </section>

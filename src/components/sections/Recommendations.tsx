@@ -66,6 +66,11 @@ function RecCard({
             <div className="mt-0.5 text-base text-text-tertiary">
               {rec.role}
             </div>
+            {rec.source && (
+              <div className="mt-1 text-[0.75rem] text-text-tertiary/60 italic">
+                {rec.source}
+              </div>
+            )}
           </div>
         </div>
       </div>

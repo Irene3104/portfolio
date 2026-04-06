@@ -25,7 +25,7 @@ const aboutCards: AboutCardData[] = [
     iconBg: "bg-[rgba(232,121,249,0.15)]",
     title: "AI / LLM Integration",
     description:
-      "Hands-on experience integrating the OpenAI API into production systems — building bilingual (EN/JP) chat assistants with prompt engineering, context management, and structured output processing.",
+      "Integrated OpenAI and Claude into production workflows. Built prompt templates for consistent code generation, applied prompt caching to cut API costs and latency, and introduced AI-assisted development processes to the team.",
   },
   {
     icon: <GlobeIcon className="stroke-accent-3" />,
@@ -37,9 +37,9 @@ const aboutCards: AboutCardData[] = [
   {
     icon: <HeartPulseIcon className="stroke-accent-1" />,
     iconBg: "bg-[rgba(192,132,252,0.15)]",
-    title: "Healthcare Tech",
+    title: "Cross-Industry Experience",
     description:
-      "Built a medical imaging SDK at Genoray that expanded DICOM converter compatibility from 4 to 10 brands, improving ETL pipelines that contributed to a 25% increase in product sales.",
+      "Aviation (4+ yrs), medical X-ray data systems, fintech/accounting, and retail workforce — domain expertise across industries lets me understand business logic fast and build software that fits real operational needs.",
   },
 ];
 
