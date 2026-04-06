@@ -20,14 +20,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "SAIXAN",
-    subtitle: "AI-Integrated P&L Platform",
+    subtitle: "AI-Integrated P&L Management System",
     tags: ["Enterprise", "AI", "Full-Stack"],
     problem:
-      "A Japanese DX company needed a departmental P&L system where non-technical finance staff could query accounting data in natural language.",
+      "A Japanese company had no way for departments to track their own profit and loss in real time. Budget planning, expense claims, and financial reporting were all handled separately, making it hard for management to spot losses early or compare performance across divisions.",
     action:
-      "Designed and built the entire platform solo. React + TypeScript frontend, Firebase + Express backend, Firestore database, deployed on GCP Cloud Run. Integrated OpenAI API with custom prompt engineering for bilingual (EN/JP) financial queries.",
+      "Built a full departmental P&L system from scratch as the sole developer. Each department enters revenue and cost data by vendor, project, and value type (MP/Plan/Forecast/Actual), and the system generates monthly and yearly breakdowns with operating profit tracking. Also built expense claim workflows for travel and commuting costs with approval logic, and an AI assistant that lets users query financial data, run analysis, and even bulk-insert or delete records through natural conversation in English and Japanese.",
     result:
-      "Now used by 4 internal departments and adopted by 2 external companies. Finance staff run natural-language queries instead of manual spreadsheet lookups.",
+      "Now used by 4 internal departments and adopted by 2 external companies. Management can monitor quarterly operating profit across all divisions in real time and catch potential losses before they happen. Expense workflows replaced manual paper-based claims.",
     techStack: ["React", "TypeScript", "Firebase", "GCP", "OpenAI API", "Zod"],
     status: "live",
     statusLabel: "Live",
