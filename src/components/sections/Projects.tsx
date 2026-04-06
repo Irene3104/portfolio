@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import SectionHeader from "@/components/ui/SectionHeader";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useMagnetic } from "@/hooks/useMagnetic";
@@ -97,12 +98,21 @@ function ProjectCard({
         className="flex h-full flex-col overflow-hidden rounded-[20px] border border-accent-1/8 bg-bg-card transition-all duration-400 hover:border-accent-1/25 hover:shadow-[0_20px_60px_rgba(124,58,237,0.12)]"
       >
         {/* Thumbnail */}
-        <div className="relative h-[160px] w-full shrink-0 overflow-hidden">
-          <div
-            className={`flex h-full w-full items-center justify-center bg-gradient-to-br ${project.gradient} transition-transform duration-500`}
-          >
-            {thumbIcons[index]}
-          </div>
+        <div className="relative h-[180px] w-full shrink-0 overflow-hidden">
+          {project.thumbnail ? (
+            <Image
+              src={project.thumbnail}
+              alt={project.title}
+              fill
+              className="object-cover object-top transition-transform duration-500 hover:scale-105"
+            />
+          ) : (
+            <div
+              className={`flex h-full w-full items-center justify-center bg-gradient-to-br ${project.gradient}`}
+            >
+              {thumbIcons[index]}
+            </div>
+          )}
           <span
             className={`absolute right-3.5 top-3.5 rounded-full px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-wider ${
               project.status === "live"

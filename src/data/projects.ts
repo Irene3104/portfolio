@@ -9,6 +9,7 @@ export interface Project {
   status: "live" | "completed";
   statusLabel: string;
   gradient: string;
+  thumbnail?: string;
   note?: string;
   githubUrl?: string;
   demoUrl?: string;
@@ -29,6 +30,7 @@ export const projects: Project[] = [
     status: "live",
     statusLabel: "Live",
     gradient: "from-[#4c1d95] to-[#7c3aed]",
+    thumbnail: "/images/projects/saixan.webp",
     note: "Proprietary system. Architecture overview available on request.",
     githubUrl: "https://github.com/Irene3104/SAIXAN",
   },
@@ -46,6 +48,7 @@ export const projects: Project[] = [
     status: "live",
     statusLabel: "Live · 124 Users",
     gradient: "from-[#701a75] to-[#c026d3]",
+    thumbnail: "/images/projects/bee-time.webp",
     githubUrl: "https://github.com/Irene3104/Bee-Time",
   },
   {
@@ -62,6 +65,7 @@ export const projects: Project[] = [
     status: "completed",
     statusLabel: "Shipped",
     gradient: "from-[#581c87] to-[#a855f7]",
+    thumbnail: "/images/projects/genoray.webp",
   },
   {
     title: "Smart Farm AI",
