@@ -39,7 +39,7 @@ const aboutCards: AboutCardData[] = [
     iconBg: "bg-[rgba(192,132,252,0.15)]",
     title: "Cross-Industry Experience",
     description:
-      "Aviation operations, dental X-ray data systems, enterprise accounting, and retail workforce management. Each industry taught me to learn domain logic fast and build software that solves real operational problems, not just technical ones.",
+      "Aviation billing, medical data pipelines, enterprise accounting, retail workforce ops. I understand how other departments work, what their pain points are, and what they actually need from software. That means I scope features based on real workflows, not assumptions, and I communicate with non-technical stakeholders without a translator.",
   },
 ];
 
