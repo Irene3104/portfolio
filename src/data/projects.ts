@@ -47,11 +47,11 @@ export const projects: Project[] = [
     subtitle: "Workforce Management App",
     tags: ["Production", "Freelance", "Full-Stack"],
     problem:
-      "A Sydney cafe group managing 50+ staff across 5 stores needed a reliable attendance system with location-based fraud prevention.",
+      "A Sydney cafe group with 50+ staff across 5 stores was tracking attendance with a rented hardware card machine and calculating wages manually in spreadsheets. Frequent human errors in payroll, hardware rental costs, and physical card waste were ongoing issues.",
     action:
-      "Built QR-based check-in with GPS verification via Google Maps API. Added JWT + Google OAuth auth, an admin dashboard for multi-store management, and automated Excel payroll exports.",
+      "Replaced the entire system with a mobile-first web app. Staff scan a QR code on their phone to clock in/out with GPS verification. Built role-based access so employees see their own time activity while the admin dashboard gives store owners a full view of all locations, staff, and attendance records with one-click Excel exports. Auth uses JWT + Google OAuth with role separation stored in the database.",
     result:
-      "Live across 5 retail stores in Sydney. 124 active users. Store owners reported improved wage accuracy and reduced manual payroll work.",
+      "Live across 5 retail stores (Baskin Robbins, Sushi Roll, Sorrel Cafe) in Sydney with 128 active users. Eliminated hardware rental costs and physical card waste. Reduced payroll calculation errors and cut admin workload significantly. Roster management feature currently in development.",
     techStack: ["React", "TypeScript", "Express", "Prisma", "MySQL", "Google Maps API"],
     status: "live",
     statusLabel: "Live · 124 Users",
