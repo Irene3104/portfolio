@@ -41,7 +41,7 @@ function RecCard({
   }, [handleMove, handleLeave]);
 
   return (
-    <ScrollReveal delay={delay}>
+    <div>
       <div
         ref={cardRef}
         className="relative rounded-[20px] border border-accent-1/8 bg-bg-card p-7 transition-all duration-300 hover:border-accent-1/20 hover:-translate-y-0.5"
@@ -74,7 +74,7 @@ function RecCard({
           </div>
         </div>
       </div>
-    </ScrollReveal>
+    </div>
   );
 }
 

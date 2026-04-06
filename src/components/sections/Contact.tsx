@@ -1,6 +1,5 @@
 "use client";
 
-import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useMagnetic } from "@/hooks/useMagnetic";
 import { MailIcon, GithubIcon, LinkedInIcon } from "@/components/icons";
 
@@ -41,33 +40,20 @@ export default function Contact() {
       className="relative flex flex-col items-center justify-center px-[var(--page-px)] py-[120px] text-center max-md:py-20"
     >
       <div className="mx-auto flex w-full max-w-[var(--max-w)] flex-col items-center">
-        <ScrollReveal className="text-base uppercase tracking-[3px] text-accent-1 mb-3.5">
+        <div className="text-base uppercase tracking-[3px] text-accent-1 mb-3.5">
           Get in Touch
-        </ScrollReveal>
+        </div>
 
-        <ScrollReveal
-          delay={100}
-          className="font-heading text-[clamp(2.6rem,5vw,4.6rem)] font-bold mb-3.5 max-md:text-[clamp(1.8rem,8vw,2.8rem)]"
-        >
-          <h2>
-            Let&apos;s <span className="gradient-text">Work Together</span>
-          </h2>
-        </ScrollReveal>
+        <h2 className="font-heading text-[clamp(2.6rem,5vw,4.6rem)] font-bold mb-3.5 max-md:text-[clamp(1.8rem,8vw,2.8rem)]">
+          Let&apos;s <span className="gradient-text">Work Together</span>
+        </h2>
 
-        <ScrollReveal
-          delay={200}
-          className="mb-10 max-w-[520px] text-[1.25rem] leading-[1.7] text-text-secondary max-md:text-[0.9rem] max-md:mb-8"
-        >
-          <p>
-            Based in Sydney, open to remote and hybrid. I bring full-stack delivery,
-            AI integration, and trilingual communication to teams building impactful products.
-          </p>
-        </ScrollReveal>
+        <p className="mb-10 max-w-[520px] text-[1.25rem] leading-[1.7] text-text-secondary max-md:text-[0.9rem] max-md:mb-8">
+          Based in Sydney, open to remote and hybrid. I bring full-stack delivery,
+          AI integration, and trilingual communication to teams building impactful products.
+        </p>
 
-        <ScrollReveal
-          delay={300}
-          className="flex flex-wrap justify-center gap-3.5 max-md:flex-col max-md:items-center max-md:gap-3"
-        >
+        <div className="flex flex-wrap justify-center gap-3.5 max-md:flex-col max-md:items-center max-md:gap-3">
           <MagneticContactBtn
             href="mailto:sjyono@gmail.com"
             variant="primary"
@@ -86,7 +72,7 @@ export default function Contact() {
             icon={<LinkedInIcon size={18} />}
             label="LinkedIn"
           />
-        </ScrollReveal>
+        </div>
       </div>
     </section>
   );
