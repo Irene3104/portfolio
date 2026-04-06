@@ -77,7 +77,7 @@ function ProjectCard({
 
   return (
     <ScrollReveal
-      delay={index * 150}
+      delay={0}
       className={
         index === 2
           ? "max-lg:col-span-full max-lg:max-w-[500px] max-lg:justify-self-center max-md:col-auto max-md:max-w-none"

@@ -15,7 +15,7 @@ export default function Skills() {
           {skillCategories.map((cat, i) => (
             <ScrollReveal
               key={cat.title}
-              delay={i * 80}
+              delay={0}
               className="rounded-[18px] border border-accent-1/8 bg-bg-card p-6 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_4px_30px_rgba(192,132,252,0.06)]"
             >
               <div className="mb-3.5 font-heading text-[1.1rem] font-semibold uppercase tracking-[1.5px] text-accent-1">

@@ -101,7 +101,7 @@ export default function About() {
 
         <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 max-md:gap-4">
           {aboutCards.map((card, i) => (
-            <TiltCard key={card.title} delay={i * 120}>
+            <TiltCard key={card.title} delay={0}>
               <div
                 className={`mb-4 flex h-[46px] w-[46px] items-center justify-center rounded-[13px] ${card.iconBg}`}
               >

@@ -19,7 +19,7 @@ export default function Experience() {
           {experiences.map((exp, i) => (
             <ScrollReveal
               key={`${exp.company}-${exp.period}`}
-              delay={i * 150}
+              delay={0}
               className={`relative ${i < experiences.length - 1 ? "mb-12 max-md:mb-9" : ""}`}
             >
               {/* Timeline dot */}

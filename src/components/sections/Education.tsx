@@ -15,7 +15,7 @@ export default function Education() {
           {educations.map((edu, i) => (
             <ScrollReveal
               key={edu.school}
-              delay={i * 150}
+              delay={0}
               className="relative overflow-hidden rounded-[20px] border border-accent-1/8 bg-bg-card p-7 transition-all duration-300 hover:border-accent-1/20 hover:-translate-y-0.5"
             >
               <span className="max-md:static max-md:mb-2.5 max-md:inline-block absolute right-4 top-4 rounded-full bg-accent-1/12 px-3 py-1 text-[0.68rem] font-semibold text-accent-1">

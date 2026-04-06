@@ -89,7 +89,7 @@ export default function Recommendations() {
 
         <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-1 max-lg:max-w-[600px] max-md:gap-4">
           {recommendations.map((rec, i) => (
-            <RecCard key={rec.name} rec={rec} delay={i * 150} />
+            <RecCard key={rec.name} rec={rec} delay={0} />
           ))}
         </div>
       </div>
