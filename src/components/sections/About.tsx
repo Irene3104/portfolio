@@ -79,10 +79,10 @@ function TiltCard({
   }, [handleMove, handleLeave]);
 
   return (
-    <ScrollReveal delay={delay}>
+    <ScrollReveal delay={delay} className="h-full">
       <div
         ref={cardRef}
-        className="rounded-[20px] border border-accent-1/8 bg-bg-card p-7 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_8px_40px_rgba(192,132,252,0.08)] max-md:p-[22px]"
+        className="h-full rounded-[20px] border border-accent-1/8 bg-bg-card p-7 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_8px_40px_rgba(192,132,252,0.08)] max-md:p-[22px]"
       >
         {children}
       </div>
