@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* ── CSS Custom Properties ── */
+:root {
+  --bg-primary: #08070e;
+  --bg-secondary: #0e0d16;
+  --bg-card: #13121d;
+  --bg-card-hover: #19182a;
+  --text-primary: #f0eef6;
+  --text-secondary: #9892a6;
+  --text-tertiary: #6b6580;
+  --accent-1: #c084fc;
+  --accent-2: #e879f9;
+  --accent-3: #f0abfc;
+  --accent-4: #7c3aed;
+  --gradient-1: linear-gradient(135deg, #c084fc, #e879f9);
+  --gradient-2: linear-gradient(135deg, #e879f9, #f472b6);
+  --gradient-3: linear-gradient(135deg, #7c3aed, #c084fc);
+  --neon-glow: 0 0 20px rgba(192, 132, 252, 0.3), 0 0 60px rgba(192, 132, 252, 0.1);
+  --page-px: 80px;
+  --max-w: 1200px;
+}
+
+/* ── Base Styles ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* ── Noise Texture Overlay ── */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 10000;
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-4);
+  border-radius: 3px;
+}
+
+/* ── Keyframe Animations ── */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-badge {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float-orb {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(30px, -40px);
+  }
+  66% {
+    transform: translate(-20px, 30px);
+  }
+}
+
+/* ── Utility Classes ── */
+.gradient-text {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.neon-glow {
+  box-shadow: var(--neon-glow);
+}
+
+/* ── Scroll Reveal Base ── */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Responsive Page Padding ── */
+@media (max-width: 1024px) {
+  :root {
+    --page-px: 40px;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --page-px: 20px;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --page-px: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  :root {
+    --page-px: 100px;
+    --max-w: 1300px;
+  }
+}
+
+/* ── Tailwind Theme Extension ── */
+@theme {
+  --color-bg-primary: #08070e;
+  --color-bg-secondary: #0e0d16;
+  --color-bg-card: #13121d;
+  --color-bg-card-hover: #19182a;
+  --color-text-primary: #f0eef6;
+  --color-text-secondary: #9892a6;
+  --color-text-tertiary: #6b6580;
+  --color-accent-1: #c084fc;
+  --color-accent-2: #e879f9;
+  --color-accent-3: #f0abfc;
+  --color-accent-4: #7c3aed;
+
+  --font-heading: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  --animate-spin-slow: spin-slow 20s linear infinite;
+  --animate-pulse-badge: pulse-badge 2s infinite;
+  --animate-marquee: marquee 35s linear infinite;
+  --animate-float-orb: float-orb 12s ease-in-out infinite;
+  --animate-float-orb-reverse: float-orb 15s ease-in-out infinite reverse;
+}

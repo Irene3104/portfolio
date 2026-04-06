@@ -1,0 +1,122 @@
+"use client";
+
+import { useCallback, useEffect, useRef } from "react";
+import SectionHeader from "@/components/ui/SectionHeader";
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import { MonitorIcon, AiLayersIcon, GlobeIcon, HeartPulseIcon } from "@/components/icons";
+
+interface AboutCardData {
+  icon: React.ReactNode;
+  iconBg: string;
+  title: string;
+  description: string;
+}
+
+const aboutCards: AboutCardData[] = [
+  {
+    icon: <MonitorIcon className="stroke-accent-4" />,
+    iconBg: "bg-[rgba(124,58,237,0.15)]",
+    title: "End-to-End Delivery",
+    description:
+      "I own the full stack from data modeling and API design through React frontends to cloud deployment on GCP and Firebase. At TEN-X, I built and shipped SAIXAN as the sole developer across every layer.",
+  },
+  {
+    icon: <AiLayersIcon className="stroke-accent-2" />,
+    iconBg: "bg-[rgba(232,121,249,0.15)]",
+    title: "AI / LLM Integration",
+    description:
+      "Hands-on experience integrating the OpenAI API into production systems — building bilingual (EN/JP) chat assistants with prompt engineering, context management, and structured output processing.",
+  },
+  {
+    icon: <GlobeIcon className="stroke-accent-3" />,
+    iconBg: "bg-[rgba(240,171,252,0.15)]",
+    title: "Trilingual Communicator",
+    description:
+      "Native Korean, business-level Japanese, and professional English. At Genoray I bridged the Korean dev team and Japanese clients, reducing communication overhead by ~30%.",
+  },
+  {
+    icon: <HeartPulseIcon className="stroke-accent-1" />,
+    iconBg: "bg-[rgba(192,132,252,0.15)]",
+    title: "Healthcare Tech",
+    description:
+      "Built a medical imaging SDK at Genoray that expanded DICOM converter compatibility from 4 to 10 brands, improving ETL pipelines that contributed to a 25% increase in product sales.",
+  },
+];
+
+function TiltCard({
+  children,
+  delay,
+}: {
+  children: React.ReactNode;
+  delay: number;
+}) {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const handleMove = useCallback((e: MouseEvent) => {
+    const el = cardRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    el.style.transform = `perspective(800px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg) translateY(-2px)`;
+  }, []);
+
+  const handleLeave = useCallback(() => {
+    if (cardRef.current) cardRef.current.style.transform = "";
+  }, []);
+
+  useEffect(() => {
+    const el = cardRef.current;
+    if (!el) return;
+    const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) return;
+    el.addEventListener("mousemove", handleMove);
+    el.addEventListener("mouseleave", handleLeave);
+    return () => {
+      el.removeEventListener("mousemove", handleMove);
+      el.removeEventListener("mouseleave", handleLeave);
+    };
+  }, [handleMove, handleLeave]);
+
+  return (
+    <ScrollReveal delay={delay}>
+      <div
+        ref={cardRef}
+        className="rounded-[20px] border border-accent-1/8 bg-bg-card p-7 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_8px_40px_rgba(192,132,252,0.08)] max-md:p-[22px]"
+      >
+        {children}
+      </div>
+    </ScrollReveal>
+  );
+}
+
+export default function About() {
+  return (
+    <section
+      id="about"
+      className="relative flex flex-col justify-center px-[var(--page-px)] py-[120px] max-md:py-20"
+    >
+      <div className="mx-auto w-full max-w-[var(--max-w)]">
+        <SectionHeader label="About Me" title="What I Bring to the Table" />
+
+        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 max-md:gap-4">
+          {aboutCards.map((card, i) => (
+            <TiltCard key={card.title} delay={i * 120}>
+              <div
+                className={`mb-4 flex h-[46px] w-[46px] items-center justify-center rounded-[13px] ${card.iconBg}`}
+              >
+                {card.icon}
+              </div>
+              <h3 className="mb-2.5 font-heading text-2xl font-semibold">
+                {card.title}
+              </h3>
+              <p className="text-[1.15rem] leading-[1.75] text-text-secondary">
+                {card.description}
+              </p>
+            </TiltCard>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
