@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useMagnetic } from "@/hooks/useMagnetic";
-import { GithubIcon, MonitorIcon, UsersIcon, HeartPulseIcon } from "@/components/icons";
+import { GithubIcon, MonitorIcon, UsersIcon, HeartPulseIcon, CpuIcon, BookIcon } from "@/components/icons";
 import { projects } from "@/data/projects";
 
 function ExternalLinkIcon({ size = 14 }: { size?: number }) {
@@ -46,6 +46,8 @@ const thumbIcons = [
   <MonitorIcon key="monitor" size={48} strokeWidth={1.5} className="stroke-white/60" />,
   <UsersIcon key="users" size={48} strokeWidth={1.5} className="stroke-white/60" />,
   <HeartPulseIcon key="pulse" size={48} strokeWidth={1.5} className="stroke-white/60" />,
+  <CpuIcon key="cpu" size={48} strokeWidth={1.5} className="stroke-white/60" />,
+  <BookIcon key="book" size={48} strokeWidth={1.5} className="stroke-white/60" />,
 ];
 
 function ProjectCard({
@@ -87,11 +89,7 @@ function ProjectCard({
   return (
     <ScrollReveal
       delay={0}
-      className={`h-full ${
-        index === 2
-          ? "max-lg:col-span-full max-lg:max-w-[500px] max-lg:justify-self-center max-md:col-auto max-md:max-w-none"
-          : ""
-      }`}
+      className="h-full"
     >
       <div
         ref={cardRef}

@@ -63,4 +63,36 @@ export const projects: Project[] = [
     statusLabel: "Shipped",
     gradient: "from-[#581c87] to-[#a855f7]",
   },
+  {
+    title: "Smart Farm AI",
+    subtitle: "Real-time Cattle Monitoring System",
+    tags: ["AI/ML", "Team Project", "UTS"],
+    problem:
+      "A cattle farm needed a way to monitor livestock in real time across multiple CCTV feeds and get automated alerts when animals show abnormal behavior.",
+    action:
+      "Built the AI detection module using YOLOv8 for real-time cattle recognition from live camera feeds. The team built a React dashboard for multi-camera monitoring and a backend API to connect everything.",
+    result:
+      "Working prototype with real-time object detection, multi-camera dashboard, alert system, and video analysis upload. Presented as a capstone project at UTS.",
+    techStack: ["Python", "YOLOv8", "React", "Tailwind CSS", "Node.js", "REST API"],
+    status: "completed",
+    statusLabel: "Prototype",
+    gradient: "from-[#065f46] to-[#10b981]",
+    githubUrl: "https://github.com/Irene3104/AI_Cattle_Monitoring",
+  },
+  {
+    title: "UTS UniApp",
+    subtitle: "University Enrollment System",
+    tags: ["Python", "Team Project", "UTS"],
+    problem:
+      "Needed a student enrollment management system for a university course project, with both command-line and graphical interfaces.",
+    action:
+      "Built two versions of the app: a CLI tool and a GUI using Tkinter. Implemented student registration, login, subject enrollment (max 4), password management, and an admin panel for managing records and grades.",
+    result:
+      "Fully functional dual-interface system handling student enrollment, authentication, and admin operations. Completed with 67 commits across the team.",
+    techStack: ["Python", "Tkinter", "Colorama", "PIL"],
+    status: "completed",
+    statusLabel: "Academic",
+    gradient: "from-[#1e3a5f] to-[#3b82f6]",
+    githubUrl: "https://github.com/JinLee0811/UTS_TeamProject_CLIUniApp-and-GUIUniApp_by_Python",
+  },
 ];
