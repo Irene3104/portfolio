@@ -17,6 +17,15 @@ function ExternalLinkIcon({ size = 14 }: { size?: number }) {
   );
 }
 
+function CodeIcon({ size = 14 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
+    </svg>
+  );
+}
+
 function ChevronIcon({ expanded }: { expanded: boolean }) {
   return (
     <svg
@@ -78,18 +87,18 @@ function ProjectCard({
   return (
     <ScrollReveal
       delay={0}
-      className={
+      className={`h-full ${
         index === 2
           ? "max-lg:col-span-full max-lg:max-w-[500px] max-lg:justify-self-center max-md:col-auto max-md:max-w-none"
           : ""
-      }
+      }`}
     >
       <div
         ref={cardRef}
-        className="overflow-hidden rounded-[20px] border border-accent-1/8 bg-bg-card transition-all duration-400 hover:border-accent-1/25 hover:shadow-[0_20px_60px_rgba(124,58,237,0.12)]"
+        className="flex h-full flex-col overflow-hidden rounded-[20px] border border-accent-1/8 bg-bg-card transition-all duration-400 hover:border-accent-1/25 hover:shadow-[0_20px_60px_rgba(124,58,237,0.12)]"
       >
         {/* Thumbnail */}
-        <div className="relative h-[180px] w-full overflow-hidden max-md:h-[160px]">
+        <div className="relative h-[160px] w-full shrink-0 overflow-hidden">
           <div
             className={`flex h-full w-full items-center justify-center bg-gradient-to-br ${project.gradient} transition-transform duration-500`}
           >
@@ -107,80 +116,121 @@ function ProjectCard({
         </div>
 
         {/* Body */}
-        <div className="p-[22px]">
-          <h3 className="mb-2 font-heading text-[1.55rem] font-semibold">
+        <div className="flex flex-1 flex-col p-[22px]">
+          {/* Header */}
+          <h3 className="font-heading text-[1.4rem] font-semibold leading-tight">
             {project.title}
           </h3>
-          <div className="mb-3 text-[1.05rem] text-accent-1">
-            {project.role}
+          <div className="mt-1 text-[0.95rem] text-text-tertiary">
+            {project.subtitle}
           </div>
-          <p className="mb-3 text-[1.1rem] leading-[1.7] text-text-secondary">
-            {project.description}
-          </p>
 
-          {/* Tags - always visible */}
-          <div className="flex flex-wrap gap-1.5 mb-3.5">
+          {/* Tags */}
+          <div className="mt-3 flex flex-wrap gap-1.5">
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full bg-accent-1/8 px-2.5 py-1 text-[0.72rem] text-accent-3"
+                className="rounded-full border border-accent-1/20 px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-wider text-accent-1"
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          {/* Expandable highlights */}
+          {/* Result (always visible as the hook) */}
+          <div className="mt-4 rounded-xl bg-accent-4/8 px-4 py-3">
+            <div className="mb-1 text-[0.7rem] font-semibold uppercase tracking-widest text-accent-1">
+              Result
+            </div>
+            <p className="text-[0.9rem] leading-[1.6] text-text-secondary">
+              {project.result}
+            </p>
+          </div>
+
+          {/* Expandable PAR details */}
           <div
             className={`grid transition-all duration-300 ease-in-out ${
               expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
             }`}
           >
             <div className="overflow-hidden">
-              <ul className="mb-3.5 pt-1">
-                {project.highlights.map((h, i) => (
-                  <li
-                    key={i}
-                    className="relative mb-1.5 list-none pl-3.5 text-[0.92rem] leading-[1.65] text-text-secondary before:absolute before:left-0 before:top-2 before:h-[5px] before:w-[5px] before:rounded-full before:bg-accent-4"
+              <div className="pt-4 space-y-3">
+                <div>
+                  <div className="mb-1 text-[0.7rem] font-semibold uppercase tracking-widest text-accent-2">
+                    Problem
+                  </div>
+                  <p className="text-[0.9rem] leading-[1.6] text-text-secondary">
+                    {project.problem}
+                  </p>
+                </div>
+                <div>
+                  <div className="mb-1 text-[0.7rem] font-semibold uppercase tracking-widest text-accent-3">
+                    What I Built
+                  </div>
+                  <p className="text-[0.9rem] leading-[1.6] text-text-secondary">
+                    {project.action}
+                  </p>
+                </div>
+              </div>
+
+              {/* Tech stack */}
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {project.techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full bg-accent-1/8 px-2.5 py-1 text-[0.72rem] text-accent-3"
                   >
-                    {h}
-                  </li>
+                    {tech}
+                  </span>
                 ))}
-              </ul>
+              </div>
+
+              {/* Note */}
+              {project.note && (
+                <p className="mt-3 text-[0.78rem] italic text-text-tertiary">
+                  {project.note}
+                </p>
+              )}
             </div>
           </div>
 
-          {/* View More Details toggle */}
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="mb-4 inline-flex cursor-pointer items-center gap-1.5 border-none bg-transparent text-[0.85rem] text-accent-1 transition-all duration-300 hover:gap-2.5 hover:text-accent-3"
-          >
-            {expanded ? "Show Less" : "View More Details"}
-            <ChevronIcon expanded={expanded} />
-          </button>
+          {/* Spacer to push bottom content down */}
+          <div className="flex-1" />
 
-          {/* GitHub & Demo Links */}
-          <div className="flex gap-2.5">
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-accent-1/25 px-4 py-2 text-[0.82rem] font-medium text-text-secondary no-underline transition-all duration-300 hover:border-accent-1 hover:text-accent-1 hover:shadow-[0_0_12px_rgba(192,132,252,0.15)]"
-              >
-                <GithubIcon size={14} /> GitHub
-              </a>
-            )}
-            {project.demoUrl && (
-              <a
-                href={project.demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-4 to-accent-1 px-4 py-2 text-[0.82rem] font-medium text-[#0a0a0f] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(192,132,252,0.3)]"
-              >
-                <ExternalLinkIcon /> Live Demo
-              </a>
-            )}
+          {/* Toggle + Links */}
+          <div className="mt-4 flex items-center justify-between">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="inline-flex cursor-pointer items-center gap-1.5 border-none bg-transparent text-[0.82rem] text-accent-1 transition-all duration-300 hover:gap-2.5 hover:text-accent-3"
+            >
+              {expanded ? "Show Less" : "Case Study"}
+              <ChevronIcon expanded={expanded} />
+            </button>
+
+            <div className="flex gap-2">
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-accent-1/25 px-3.5 py-1.5 text-[0.78rem] font-medium text-text-secondary no-underline transition-all duration-300 hover:border-accent-1 hover:text-accent-1"
+                  title="View Code"
+                >
+                  <CodeIcon /> Code
+                </a>
+              )}
+              {project.demoUrl && (
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-4 to-accent-1 px-3.5 py-1.5 text-[0.78rem] font-medium text-[#0a0a0f] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(192,132,252,0.3)]"
+                  title="View Demo"
+                >
+                  <ExternalLinkIcon /> Demo
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -199,7 +249,7 @@ export default function Projects() {
       <div className="mx-auto w-full max-w-[var(--max-w)]">
         <SectionHeader label="Selected Work" title="Projects & Case Studies" />
 
-        <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-lg:gap-5 max-md:grid-cols-1 max-md:gap-4">
+        <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-lg:gap-5 max-md:grid-cols-1 max-md:gap-4 items-start">
           {projects.map((project, i) => (
             <ProjectCard key={project.title} project={project} index={i} />
           ))}
