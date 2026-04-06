@@ -27,7 +27,7 @@ export const projects: Project[] = [
     action:
       "Built a full departmental P&L system from scratch as the sole developer. Each department enters revenue and cost data by vendor, project, and value type (MP/Plan/Forecast/Actual), and the system generates monthly and yearly breakdowns with operating profit tracking. Also built expense claim workflows for travel and commuting costs with approval logic, and an AI assistant that lets users query financial data, run analysis, and even bulk-insert or delete records through natural conversation in English and Japanese.",
     result:
-      "Now used by 4 internal departments and adopted by 2 external companies. Management can monitor quarterly operating profit across all divisions in real time and catch potential losses before they happen. Expense workflows replaced manual paper-based claims.",
+      "Now used by 4 internal departments and adopted by 3 external companies. Management can monitor quarterly operating profit across all divisions in real time and catch potential losses before they happen. Expense workflows replaced manual paper-based claims.",
     techStack: ["React", "TypeScript", "Firebase", "GCP", "OpenAI API", "Zod"],
     status: "live",
     statusLabel: "Live",

@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
       "Built expense claim workflows for travel and commuting costs with multi-step approval logic, replacing paper-based processes.",
       "Integrated an AI assistant (OpenAI API) that lets users query, analyze, and bulk-manage financial records through bilingual (EN/JP) natural conversation.",
       "Adopted Claude for code generation with reusable prompt templates and prompt caching to reduce API costs and improve output quality.",
-      "Own the full stack as sole developer: data model, API, frontend, GCP Cloud Run deployment, and ongoing production support. Used by 4 departments and 2 external companies.",
+      "Own the full stack as sole developer: data model, API, frontend, GCP Cloud Run deployment, and ongoing production support. Used by 4 departments and 3 external companies.",
     ],
     techs: ["React", "TypeScript", "Node.js", "Firebase", "GCP", "OpenAI API", "Claude", "Dynamics 365"],
   },
