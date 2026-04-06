@@ -314,7 +314,8 @@ function ProjectCard({
               src={project.thumbnail}
               alt={project.title}
               fill
-              className="object-cover object-top"
+              className="object-cover"
+              style={{ objectPosition: project.thumbnailPosition || "top" }}
             />
           ) : (
             <div

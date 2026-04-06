@@ -10,6 +10,7 @@ export interface Project {
   statusLabel: string;
   gradient: string;
   thumbnail?: string;
+  thumbnailPosition?: string;
   gallery?: string[];
   note?: string;
   githubUrl?: string;
@@ -57,6 +58,7 @@ export const projects: Project[] = [
     statusLabel: "Live · 124 Users",
     gradient: "from-[#701a75] to-[#c026d3]",
     thumbnail: "/images/projects/bee-time1.webp",
+    thumbnailPosition: "center",
     gallery: [
       "/images/projects/bee-time1.webp",
       "/images/projects/bee-time2.webp",
@@ -83,6 +85,7 @@ export const projects: Project[] = [
     statusLabel: "Shipped",
     gradient: "from-[#581c87] to-[#a855f7]",
     thumbnail: "/images/projects/genoray.webp",
+    thumbnailPosition: "center",
     gallery: ["/images/projects/genoray.webp"],
   },
   {
