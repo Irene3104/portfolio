@@ -72,14 +72,14 @@ export const projects: Project[] = [
   },
   {
     title: "DICOM Image Converter",
-    subtitle: "Medical X-ray Data Tool",
+    subtitle: "Dental X-ray Data Conversion Tool",
     tags: ["C++", "Medical", "Enterprise"],
     problem:
-      "The company's X-ray viewer only supported DICOM images from 4 manufacturers, limiting market reach in the hospital sector.",
+      "The company's dental X-ray viewer software could only display DICOM images from 3 manufacturers. Each competitor used different databases (SQLite, PostgreSQL, proprietary formats), so their patient data and images were completely incompatible with our viewer.",
     action:
-      "Extended converter compatibility to 10 brands while keeping patient data integrity across hospital PACS systems. Improved ETL pipeline with batch processing, validation, and error handling.",
+      "Analyzed DICOM data structures from each manufacturer, built ETL pipelines to extract, validate, and convert their image and patient data into our MySQL-based format. Handled everything from obscure proprietary databases to standard SQL. Also worked directly with Japanese clients in their language, removing the need for a separate translator between the dev team and the client.",
     result:
-      "25% increase in product sales from expanded device support. Reduced KR-JP client coordination overhead by 30% through bilingual technical communication.",
+      "Expanded compatibility from 3 to 10+ manufacturers, contributing to a 25% increase in product sales. Direct communication with Japanese clients cut development turnaround time and improved client satisfaction significantly.",
     techStack: ["C++", "C#", "SQLite", "MySQL", "PostgreSQL"],
     status: "completed",
     statusLabel: "Shipped",
