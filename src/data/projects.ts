@@ -95,4 +95,20 @@ export const projects: Project[] = [
     gradient: "from-[#1e3a5f] to-[#3b82f6]",
     githubUrl: "https://github.com/JinLee0811/UTS_TeamProject_CLIUniApp-and-GUIUniApp_by_Python",
   },
+  {
+    title: "Online Rent Car",
+    subtitle: "Car Rental Web Application",
+    tags: ["PHP", "AWS", "Full-Stack"],
+    problem:
+      "Needed a web-based car rental system where users can browse vehicles, make reservations, and manage their bookings online.",
+    action:
+      "Built a full booking flow with HTML/CSS/JS frontend and PHP backend. Implemented reservation management, order confirmations, and user booking history. Deployed on AWS Elastic Beanstalk.",
+    result:
+      "Functional car rental platform with end-to-end booking flow, deployed and running on AWS infrastructure.",
+    techStack: ["PHP", "JavaScript", "HTML/CSS", "AWS Elastic Beanstalk"],
+    status: "completed",
+    statusLabel: "Academic",
+    gradient: "from-[#7c2d12] to-[#ea580c]",
+    githubUrl: "https://github.com/Irene3104/IP_As1_OnlineRentCar",
+  },
 ];
