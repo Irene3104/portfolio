@@ -169,8 +169,8 @@ export default function Hero() {
             </div>
 
             <p className="mx-2 my-3.5 text-[1.1rem] leading-[1.7] text-text-secondary">
-              Full-stack engineer building production systems across enterprise
-              finance, medical data, and workforce management.
+              I design, build, and deploy full-stack systems end to end.
+              Currently shipping AI-powered enterprise software and workforce tools used in production.
             </p>
 
             <div className="mb-4.5 flex flex-wrap justify-center gap-2">
@@ -213,11 +213,9 @@ export default function Hero() {
           </h1>
 
           <p className="mb-9 max-w-[520px] text-[1.25rem] leading-[1.8] text-text-secondary max-md:mx-auto max-md:max-w-full max-md:text-[1.05rem] max-md:mb-7 max-md:text-center">
-            Full-stack engineer with production experience in enterprise
-            finance, medical data systems, and workforce tools. Currently building
-            an AI-powered accounting platform at TEN-X (Japan) while
-            maintaining Bee-Time, a workforce app serving 5 retail stores in
-            Sydney.
+            I build and ship full-stack software from architecture to cloud deployment.
+            Right now I'm delivering an AI-integrated P&L management system for a Japanese
+            enterprise while running a workforce app live across 5 retail stores in Sydney.
           </p>
 
           <div className="mb-9 flex gap-10 max-lg:gap-8 max-md:justify-center max-md:gap-6 max-md:mb-7 max-[400px]:gap-4">

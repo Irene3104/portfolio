@@ -18,28 +18,28 @@ const aboutCards: AboutCardData[] = [
     iconBg: "bg-[rgba(124,58,237,0.15)]",
     title: "End-to-End Delivery",
     description:
-      "I own the full stack from data modeling and API design through React frontends to cloud deployment on GCP and Firebase. At TEN-X, I built and shipped SAIXAN as the sole developer across every layer.",
+      "I design the architecture, build the frontend and backend, deploy to cloud (GCP, Firebase), and handle production support. SAIXAN was delivered solo from system design to live deployment across every layer of the stack.",
   },
   {
     icon: <AiLayersIcon className="stroke-accent-2" />,
     iconBg: "bg-[rgba(232,121,249,0.15)]",
-    title: "AI / LLM Integration",
+    title: "AI-Driven Development",
     description:
-      "Integrated OpenAI and Claude into production workflows. Built prompt templates for consistent code generation, applied prompt caching to cut API costs and latency, and introduced AI-assisted development processes to the team.",
+      "I use AI as a core part of how I build and ship. From integrating OpenAI into production features to adopting Claude for code generation with prompt caching and template design, I bring AI into both the product and the development workflow.",
   },
   {
     icon: <GlobeIcon className="stroke-accent-3" />,
     iconBg: "bg-[rgba(240,171,252,0.15)]",
     title: "Trilingual Communicator",
     description:
-      "Native Korean, business-level Japanese, and professional English. At Genoray I bridged the Korean dev team and Japanese clients, reducing communication overhead by ~30%.",
+      "Native Korean, business Japanese, professional English. I talk directly to clients, gather requirements without a middleman, and build products that work across language barriers from day one. In a global team, that means fewer misunderstandings and faster delivery.",
   },
   {
     icon: <HeartPulseIcon className="stroke-accent-1" />,
     iconBg: "bg-[rgba(192,132,252,0.15)]",
     title: "Cross-Industry Experience",
     description:
-      "Aviation (4+ yrs), medical X-ray data systems, fintech/accounting, and retail workforce — domain expertise across industries lets me understand business logic fast and build software that fits real operational needs.",
+      "Aviation operations, dental X-ray data systems, enterprise accounting, and retail workforce management. Each industry taught me to learn domain logic fast and build software that solves real operational problems, not just technical ones.",
   },
 ];
 
