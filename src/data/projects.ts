@@ -55,7 +55,7 @@ export const projects: Project[] = [
       "Live across 5 retail stores (Baskin Robbins, Sushi Roll, Sorrel Cafe) in Sydney with 128 active users. Eliminated hardware rental costs and physical card waste. Reduced payroll calculation errors and cut admin workload significantly. Roster management feature currently in development.",
     techStack: ["React", "TypeScript", "Express", "Prisma", "MySQL", "Google Maps API"],
     status: "live",
-    statusLabel: "Live · 124 Users",
+    statusLabel: "Live · 128 Users",
     gradient: "from-[#701a75] to-[#c026d3]",
     thumbnail: "/images/projects/bee-time1.webp",
     thumbnailPosition: "center",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
       "Analyzed DICOM data structures from each manufacturer, built ETL pipelines to extract, validate, and convert their image and patient data into our MySQL-based format. Handled everything from obscure proprietary databases to standard SQL. Also worked directly with Japanese clients in their language, removing the need for a separate translator between the dev team and the client.",
     result:
       "Expanded compatibility from 3 to 10+ manufacturers, contributing to a 25% increase in product sales. Direct communication with Japanese clients cut development turnaround time and improved client satisfaction significantly.",
-    techStack: ["C++", "C#", "SQLite", "MySQL", "PostgreSQL"],
+    techStack: ["C++", "C#", "Qt", "SQLite", "MySQL", "PostgreSQL", "MSSQL"],
     status: "completed",
     statusLabel: "Shipped",
     gradient: "from-[#581c87] to-[#a855f7]",

@@ -47,7 +47,7 @@ export const experiences: Experience[] = [
       "Improved ETL pipelines with batch processing, validation, and error handling, contributing to a 25% increase in product sales.",
       "Communicated directly with Japanese clients in their language, replacing the previous workflow where a non-technical translator relayed messages between the dev team and the client. Cut development turnaround time and raised client satisfaction.",
     ],
-    techs: ["C++", "C#", "DICOM", "Data Conversion", "ETL"],
+    techs: ["C++", "C#", "Qt", "DICOM", "Data Conversion", "ETL"],
   },
   {
     role: "Operations & Business Development Associate",
