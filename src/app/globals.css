@@ -9,14 +9,14 @@
   --text-primary: #1e293b;
   --text-secondary: #475569;
   --text-tertiary: #94a3b8;
-  --accent-1: #f43f5e;
-  --accent-2: #e11d48;
-  --accent-3: #fb7185;
-  --accent-4: #be123c;
-  --gradient-1: linear-gradient(135deg, #f43f5e, #e11d48);
-  --gradient-2: linear-gradient(135deg, #e11d48, #f43f5e);
-  --gradient-3: linear-gradient(135deg, #be123c, #f43f5e);
-  --neon-glow: 0 0 20px rgba(244, 63, 94, 0.2), 0 0 60px rgba(244, 63, 94, 0.06);
+  --accent-1: #334155;
+  --accent-2: #1e293b;
+  --accent-3: #475569;
+  --accent-4: #0f172a;
+  --gradient-1: linear-gradient(135deg, #334155, #1e293b);
+  --gradient-2: linear-gradient(135deg, #1e293b, #334155);
+  --gradient-3: linear-gradient(135deg, #0f172a, #334155);
+  --neon-glow: 0 0 20px rgba(51, 65, 85, 0.15), 0 0 60px rgba(51, 65, 85, 0.05);
   --page-px: 80px;
   --max-w: 1200px;
 }
@@ -152,10 +152,10 @@ body::before {
   --color-text-primary: #1e293b;
   --color-text-secondary: #475569;
   --color-text-tertiary: #94a3b8;
-  --color-accent-1: #f43f5e;
-  --color-accent-2: #e11d48;
-  --color-accent-3: #fb7185;
-  --color-accent-4: #be123c;
+  --color-accent-1: #334155;
+  --color-accent-2: #1e293b;
+  --color-accent-3: #475569;
+  --color-accent-4: #0f172a;
 
   --font-heading: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
