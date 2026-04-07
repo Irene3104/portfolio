@@ -25,7 +25,7 @@ function CountUpStat({ target, prefix = "", suffix = "", label }: StatProps) {
         if (entry.isIntersecting && !counted.current) {
           counted.current = true;
           let cur = 0;
-          const stepTime = Math.max(Math.floor(2000 / target), 15);
+          const stepTime = Math.max(Math.floor(800 / target), 10);
           const step = () => {
             if (cur < target) {
               cur++;
