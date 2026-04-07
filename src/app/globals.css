@@ -2,21 +2,21 @@
 
 /* ── CSS Custom Properties ── */
 :root {
-  --bg-primary: #08070e;
-  --bg-secondary: #0e0d16;
-  --bg-card: #13121d;
-  --bg-card-hover: #19182a;
-  --text-primary: #f0eef6;
-  --text-secondary: #9892a6;
-  --text-tertiary: #6b6580;
-  --accent-1: #c084fc;
-  --accent-2: #e879f9;
-  --accent-3: #f0abfc;
-  --accent-4: #7c3aed;
-  --gradient-1: linear-gradient(135deg, #c084fc, #e879f9);
-  --gradient-2: linear-gradient(135deg, #e879f9, #f472b6);
-  --gradient-3: linear-gradient(135deg, #7c3aed, #c084fc);
-  --neon-glow: 0 0 20px rgba(192, 132, 252, 0.3), 0 0 60px rgba(192, 132, 252, 0.1);
+  --bg-primary: #fafafa;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-tertiary: #94a3b8;
+  --accent-1: #f43f5e;
+  --accent-2: #e11d48;
+  --accent-3: #fb7185;
+  --accent-4: #be123c;
+  --gradient-1: linear-gradient(135deg, #f43f5e, #e11d48);
+  --gradient-2: linear-gradient(135deg, #e11d48, #f43f5e);
+  --gradient-3: linear-gradient(135deg, #be123c, #f43f5e);
+  --neon-glow: 0 0 20px rgba(244, 63, 94, 0.2), 0 0 60px rgba(244, 63, 94, 0.06);
   --page-px: 80px;
   --max-w: 1200px;
 }
@@ -38,7 +38,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.015'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 10000;
 }
@@ -145,17 +145,17 @@ body::before {
 
 /* ── Tailwind Theme Extension ── */
 @theme {
-  --color-bg-primary: #08070e;
-  --color-bg-secondary: #0e0d16;
-  --color-bg-card: #13121d;
-  --color-bg-card-hover: #19182a;
-  --color-text-primary: #f0eef6;
-  --color-text-secondary: #9892a6;
-  --color-text-tertiary: #6b6580;
-  --color-accent-1: #c084fc;
-  --color-accent-2: #e879f9;
-  --color-accent-3: #f0abfc;
-  --color-accent-4: #7c3aed;
+  --color-bg-primary: #fafafa;
+  --color-bg-secondary: #f1f5f9;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f8fafc;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #475569;
+  --color-text-tertiary: #94a3b8;
+  --color-accent-1: #f43f5e;
+  --color-accent-2: #e11d48;
+  --color-accent-3: #fb7185;
+  --color-accent-4: #be123c;
 
   --font-heading: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;

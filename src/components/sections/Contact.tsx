@@ -24,8 +24,8 @@ function MagneticContactBtn({
       rel={href.startsWith("mailto") ? undefined : "noopener noreferrer"}
       className={`inline-flex items-center gap-2.5 rounded-full px-6.5 py-3.5 font-heading text-[1.1rem] font-medium no-underline transition-all duration-300 max-md:w-full max-md:max-w-[280px] max-md:justify-center ${
         variant === "primary"
-          ? "bg-gradient-to-br from-accent-1 to-accent-2 text-[#0a0a0f] hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(192,132,252,0.4)]"
-          : "border border-accent-1/30 text-text-primary hover:-translate-y-0.5 hover:border-accent-1 hover:shadow-[0_0_20px_rgba(192,132,252,0.15)]"
+          ? "bg-gradient-to-br from-accent-1 to-accent-2 text-white hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(244,63,94,0.4)]"
+          : "border border-accent-1/30 text-text-primary hover:-translate-y-0.5 hover:border-accent-1 hover:shadow-[0_0_20px_rgba(244,63,94,0.15)]"
       }`}
     >
       {icon} {label}

@@ -31,7 +31,7 @@ export const projects: Project[] = [
     techStack: ["React", "TypeScript", "Firebase", "GCP", "OpenAI API", "Zod"],
     status: "live",
     statusLabel: "Live",
-    gradient: "from-[#4c1d95] to-[#7c3aed]",
+    gradient: "from-[#1e293b] to-[#334155]",
     thumbnail: "/images/projects/saixan1.webp",
     gallery: [
       "/images/projects/saixan2.webp",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     techStack: ["React", "TypeScript", "Express", "Prisma", "MySQL", "Google Maps API"],
     status: "live",
     statusLabel: "Live · 128 Users",
-    gradient: "from-[#701a75] to-[#c026d3]",
+    gradient: "from-[#1e293b] to-[#475569]",
     thumbnail: "/images/projects/bee-time1.webp",
     thumbnailPosition: "center",
     gallery: [
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     techStack: ["C++", "C#", "Qt", "SQLite", "MySQL", "PostgreSQL", "MSSQL"],
     status: "completed",
     statusLabel: "Shipped",
-    gradient: "from-[#581c87] to-[#a855f7]",
+    gradient: "from-[#0f172a] to-[#334155]",
     thumbnail: "/images/projects/genoray.webp",
     thumbnailPosition: "center",
     gallery: ["/images/projects/genoray.webp"],
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     techStack: ["Python", "YOLOv8", "React", "Tailwind CSS", "Node.js", "REST API"],
     status: "completed",
     statusLabel: "Prototype",
-    gradient: "from-[#065f46] to-[#10b981]",
+    gradient: "from-[#1e293b] to-[#64748b]",
     githubUrl: "https://github.com/Irene3104/AI_Cattle_Monitoring",
   },
   {
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Tkinter", "Colorama", "PIL"],
     status: "completed",
     statusLabel: "Academic",
-    gradient: "from-[#1e3a5f] to-[#3b82f6]",
+    gradient: "from-[#0f172a] to-[#475569]",
     githubUrl: "https://github.com/JinLee0811/UTS_TeamProject_CLIUniApp-and-GUIUniApp_by_Python",
   },
   {
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     techStack: ["PHP", "JavaScript", "HTML/CSS", "AWS Elastic Beanstalk"],
     status: "completed",
     statusLabel: "Academic",
-    gradient: "from-[#7c2d12] to-[#ea580c]",
+    gradient: "from-[#1e293b] to-[#64748b]",
     githubUrl: "https://github.com/Irene3104/IP_As1_OnlineRentCar",
   },
 ];
