@@ -16,7 +16,7 @@ export default function Skills() {
             <ScrollReveal
               key={cat.title}
               delay={0}
-              className="rounded-[18px] border border-accent-1/8 bg-bg-card p-6 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_4px_30px_rgba(51,65,85,0.06)]"
+              className="rounded-[18px] border border-accent-1/8 bg-bg-card p-6 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_4px_30px_rgba(244,63,94,0.06)]"
             >
               <div className="mb-3.5 font-heading text-[1.1rem] font-semibold uppercase tracking-[1.5px] text-accent-1">
                 {cat.title}
@@ -25,7 +25,7 @@ export default function Skills() {
                 {cat.items.map((item) => (
                   <span
                     key={item}
-                    className="cursor-default rounded-full border border-accent-1/12 px-4 py-[7px] text-[1.05rem] text-text-secondary transition-all duration-300 hover:border-accent-1 hover:text-accent-1 hover:shadow-[0_0_12px_rgba(51,65,85,0.1)]"
+                    className="cursor-default rounded-full border border-accent-1/12 px-4 py-[7px] text-[1.05rem] text-text-secondary transition-all duration-300 hover:border-accent-1 hover:text-accent-1 hover:shadow-[0_0_12px_rgba(244,63,94,0.1)]"
                   >
                     {item}
                   </span>

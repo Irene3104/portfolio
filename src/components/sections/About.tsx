@@ -15,28 +15,28 @@ interface AboutCardData {
 const aboutCards: AboutCardData[] = [
   {
     icon: <MonitorIcon className="stroke-accent-1" />,
-    iconBg: "bg-[rgba(51,65,85,0.08)]",
+    iconBg: "bg-[rgba(244,63,94,0.08)]",
     title: "End-to-End Delivery",
     description:
       "I own full-stack delivery across system design, frontend and backend development, cloud deployment, and post-launch support. At TEN-X, I delivered SAIXAN as the sole engineer, owning the architecture, implementation, deployment, and ongoing operation of a production P&L platform used across internal teams and external clients.",
   },
   {
     icon: <AiLayersIcon className="stroke-accent-1" />,
-    iconBg: "bg-[rgba(51,65,85,0.08)]",
+    iconBg: "bg-[rgba(244,63,94,0.08)]",
     title: "AI-Driven Development",
     description:
       "I use AI where it creates clear value in both product delivery and engineering workflow. That includes integrating LLM capabilities into production systems, designing prompts and output handling for reliability, and using tools like Claude to improve development speed without giving up engineering judgement.",
   },
   {
     icon: <GlobeIcon className="stroke-accent-1" />,
-    iconBg: "bg-[rgba(51,65,85,0.08)]",
+    iconBg: "bg-[rgba(244,63,94,0.08)]",
     title: "Trilingual Communicator",
     description:
       "I work across Korean, Japanese, and English in both technical and business settings. I gather requirements directly, align with clients and internal teams without relying on intermediaries, and help teams move faster by reducing communication gaps early in the delivery process.",
   },
   {
     icon: <HeartPulseIcon className="stroke-accent-1" />,
-    iconBg: "bg-[rgba(51,65,85,0.15)]",
+    iconBg: "bg-[rgba(244,63,94,0.15)]",
     title: "Cross-Industry Experience",
     description:
       "I have built software across enterprise finance, medical imaging, workforce operations, and internal business systems. Working across these environments has taught me how to identify real operational pain points, scope features around actual workflows, and communicate effectively with non-technical stakeholders.",
@@ -82,7 +82,7 @@ function TiltCard({
     <ScrollReveal delay={delay} className="h-full">
       <div
         ref={cardRef}
-        className="h-full rounded-[20px] border border-slate-200 bg-bg-card p-7 shadow-sm transition-all duration-300 hover:border-accent-1/30 hover:shadow-[0_8px_40px_rgba(51,65,85,0.08)] max-md:p-[22px]"
+        className="h-full rounded-[20px] border border-slate-200 bg-bg-card p-7 shadow-sm transition-all duration-300 hover:border-accent-1/30 hover:shadow-[0_8px_40px_rgba(244,63,94,0.08)] max-md:p-[22px]"
       >
         {children}
       </div>
