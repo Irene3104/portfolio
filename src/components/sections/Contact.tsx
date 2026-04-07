@@ -49,8 +49,9 @@ export default function Contact() {
         </h2>
 
         <p className="mb-10 max-w-[520px] text-[1.25rem] leading-[1.7] text-text-secondary max-md:text-[0.9rem] max-md:mb-8">
-          Based in Sydney, open to remote and hybrid. I bring full-stack delivery,
-          AI integration, and trilingual communication to teams building impactful products.
+          Based in Sydney and open to remote or hybrid roles. I bring full-stack product
+          delivery, production AI integration, and cross-functional communication to teams
+          building software that solves real operational problems.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3.5 max-md:flex-col max-md:items-center max-md:gap-3">

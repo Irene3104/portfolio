@@ -27,7 +27,7 @@ export const projects: Project[] = [
     action:
       "Built a full departmental P&L system from scratch as the sole developer. Each department enters revenue and cost data by vendor, project, and value type (MP/Plan/Forecast/Actual), and the system generates monthly and yearly breakdowns with operating profit tracking. Also built expense claim workflows for travel and commuting costs with approval logic, and an AI assistant that lets users query financial data, run analysis, and even bulk-insert or delete records through natural conversation in English and Japanese.",
     result:
-      "Now used by 4 internal departments and adopted by 3 external companies. Management can monitor quarterly operating profit across all divisions in real time and catch potential losses before they happen. Expense workflows replaced manual paper-based claims.",
+      "Used by 4 internal departments and 3 external companies, SAIXAN gives management real-time visibility into departmental profit and loss while replacing paper-based expense workflows with structured digital approvals and bilingual AI-assisted querying.",
     techStack: ["React", "TypeScript", "Firebase", "GCP", "OpenAI API", "Zod"],
     status: "live",
     statusLabel: "Live",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     action:
       "Replaced the entire system with a mobile-first web app. Staff scan a QR code on their phone to clock in/out with GPS verification. Built role-based access so employees see their own time activity while the admin dashboard gives store owners a full view of all locations, staff, and attendance records with one-click Excel exports. Auth uses JWT + Google OAuth with role separation stored in the database.",
     result:
-      "Live across 5 retail stores (Baskin Robbins, Sushi Roll, Sorrel Cafe) in Sydney with 128 active users. Eliminated hardware rental costs and physical card waste. Reduced payroll calculation errors and cut admin workload significantly. Roster management feature currently in development.",
+      "Built from firsthand operational insight, Bee-Time replaced error-prone hardware time cards and manual wage calculation with a mobile-first web app now live across 5 Sydney retail stores with 128 active users. It reduced payroll errors, removed hardware rental and card costs, and gave both staff and management real-time visibility into worked hours.",
     techStack: ["React", "TypeScript", "Express", "Prisma", "MySQL", "Google Maps API"],
     status: "live",
     statusLabel: "Live · 128 Users",
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     action:
       "Analyzed DICOM data structures from each manufacturer, built ETL pipelines to extract, validate, and convert their image and patient data into our MySQL-based format. Handled everything from obscure proprietary databases to standard SQL. Also worked directly with Japanese clients in their language, removing the need for a separate translator between the dev team and the client.",
     result:
-      "Expanded compatibility from 3 to 10+ manufacturers, contributing to a 25% increase in product sales. Direct communication with Japanese clients cut development turnaround time and improved client satisfaction significantly.",
+      "Expanded compatibility from 3 to 10+ manufacturers, improving interoperability across dental imaging systems and contributing to a 25% increase in product sales. Direct communication with Japanese clients shortened turnaround time and improved delivery accuracy.",
     techStack: ["C++", "C#", "Qt", "SQLite", "MySQL", "PostgreSQL", "MSSQL"],
     status: "completed",
     statusLabel: "Shipped",

@@ -213,15 +213,15 @@ export default function Hero() {
           </h1>
 
           <p className="mb-9 max-w-[520px] text-[1.25rem] leading-[1.8] text-text-secondary max-md:mx-auto max-md:max-w-full max-md:text-[1.05rem] max-md:mb-7 max-md:text-center">
-            I build and ship full-stack software from architecture to cloud deployment.
-            Right now I'm delivering an AI-integrated P&L management system for a Japanese
-            enterprise while running a workforce app live across 5 retail stores in Sydney.
+            I build and ship full-stack software from system design to production support.
+            Right now I'm delivering an AI-integrated P&L platform used in enterprise
+            operations and maintaining a workforce product live across 5 retail stores in Sydney.
           </p>
 
           <div className="mb-9 flex gap-10 max-lg:gap-8 max-md:justify-center max-md:gap-6 max-md:mb-7 max-[400px]:gap-4">
             <CountUpStat target={3} prefix="+" label="Years of<br>Experience" />
-            <CountUpStat target={125} prefix="+" label="Active<br>Product Users" />
-            <CountUpStat target={25} prefix="+" suffix="%" label="Revenue<br>Growth Driven" />
+            <CountUpStat target={128} prefix="+" label="Active<br>Product Users" />
+            <CountUpStat target={2} label="Production Systems<br>Owned End-to-End" />
           </div>
 
           <div className="flex gap-3.5 max-md:flex-col max-md:gap-3">
