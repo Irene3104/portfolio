@@ -251,7 +251,7 @@ function CaseStudyModal({
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-4 to-accent-1 px-5 py-2 text-[0.85rem] font-medium text-[#0a0a0f] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(192,132,252,0.3)]"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-4 to-accent-1 px-5 py-2 text-[0.85rem] font-medium text-[#0a0a0f] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(176,184,66,0.3)]"
               >
                 <ExternalLinkIcon /> Demo
               </a>
@@ -399,7 +399,7 @@ function ProjectCard({
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-4 to-accent-1 px-3.5 py-1.5 text-[0.78rem] font-medium text-[#0a0a0f] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(192,132,252,0.3)]"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent-4 to-accent-1 px-3.5 py-1.5 text-[0.78rem] font-medium text-[#0a0a0f] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(176,184,66,0.3)]"
                 >
                   <ExternalLinkIcon /> Demo
                 </a>
@@ -442,7 +442,7 @@ export default function Projects() {
             href="https://github.com/Irene3104"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 rounded-full border border-accent-1/30 bg-transparent px-9 py-3.5 font-heading text-[0.9rem] font-medium text-text-primary no-underline transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-1 hover:shadow-[0_0_25px_rgba(192,132,252,0.2)]"
+            className="inline-flex items-center gap-2.5 rounded-full border border-accent-1/30 bg-transparent px-9 py-3.5 font-heading text-[0.9rem] font-medium text-text-primary no-underline transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-1 hover:shadow-[0_0_25px_rgba(176,184,66,0.2)]"
           >
             <GithubIcon size={18} />
             View More Projects on GitHub <span>&rarr;</span>

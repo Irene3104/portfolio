@@ -83,8 +83,8 @@ function CtaCard({
       download={download || undefined}
       className={`group relative flex-1 overflow-hidden rounded-[18px] p-6 text-text-primary no-underline transition-transform duration-300 hover:-translate-y-1 cursor-pointer min-h-[120px] max-md:min-h-0 max-md:p-5 ${
         variant === "purple"
-          ? "bg-gradient-to-br from-[#7c3aed] to-[#a855f7]"
-          : "bg-gradient-to-br from-[#e879f9] to-[#f0abfc] text-[#1a0a2e]"
+          ? "bg-gradient-to-br from-[#7B7B22] to-[#B0B842] text-[#0c0d08]"
+          : "bg-gradient-to-br from-[#B0B842] to-[#D0D072] text-[#0c0d08]"
       }`}
     >
       <span

@@ -2,21 +2,21 @@
 
 /* ── CSS Custom Properties ── */
 :root {
-  --bg-primary: #08070e;
-  --bg-secondary: #0e0d16;
-  --bg-card: #13121d;
-  --bg-card-hover: #19182a;
-  --text-primary: #f0eef6;
-  --text-secondary: #9892a6;
-  --text-tertiary: #6b6580;
-  --accent-1: #c084fc;
-  --accent-2: #e879f9;
-  --accent-3: #f0abfc;
-  --accent-4: #7c3aed;
-  --gradient-1: linear-gradient(135deg, #c084fc, #e879f9);
-  --gradient-2: linear-gradient(135deg, #e879f9, #f472b6);
-  --gradient-3: linear-gradient(135deg, #7c3aed, #c084fc);
-  --neon-glow: 0 0 20px rgba(192, 132, 252, 0.3), 0 0 60px rgba(192, 132, 252, 0.1);
+  --bg-primary: #0c0d08;
+  --bg-secondary: #121410;
+  --bg-card: #161812;
+  --bg-card-hover: #1e211a;
+  --text-primary: #e8e8d0;
+  --text-secondary: #9a9a7a;
+  --text-tertiary: #6b6b50;
+  --accent-1: #B0B842;
+  --accent-2: #9B9B32;
+  --accent-3: #D0D072;
+  --accent-4: #7B7B22;
+  --gradient-1: linear-gradient(135deg, #B0B842, #D0D072);
+  --gradient-2: linear-gradient(135deg, #9B9B32, #B0B842);
+  --gradient-3: linear-gradient(135deg, #7B7B22, #B0B842);
+  --neon-glow: 0 0 20px rgba(176, 184, 66, 0.25), 0 0 60px rgba(176, 184, 66, 0.08);
   --page-px: 80px;
   --max-w: 1200px;
 }
@@ -145,17 +145,17 @@ body::before {
 
 /* ── Tailwind Theme Extension ── */
 @theme {
-  --color-bg-primary: #08070e;
-  --color-bg-secondary: #0e0d16;
-  --color-bg-card: #13121d;
-  --color-bg-card-hover: #19182a;
-  --color-text-primary: #f0eef6;
-  --color-text-secondary: #9892a6;
-  --color-text-tertiary: #6b6580;
-  --color-accent-1: #c084fc;
-  --color-accent-2: #e879f9;
-  --color-accent-3: #f0abfc;
-  --color-accent-4: #7c3aed;
+  --color-bg-primary: #0c0d08;
+  --color-bg-secondary: #121410;
+  --color-bg-card: #161812;
+  --color-bg-card-hover: #1e211a;
+  --color-text-primary: #e8e8d0;
+  --color-text-secondary: #9a9a7a;
+  --color-text-tertiary: #6b6b50;
+  --color-accent-1: #B0B842;
+  --color-accent-2: #9B9B32;
+  --color-accent-3: #D0D072;
+  --color-accent-4: #7B7B22;
 
   --font-heading: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;

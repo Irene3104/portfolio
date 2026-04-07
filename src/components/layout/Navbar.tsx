@@ -116,7 +116,7 @@ export default function Navbar() {
         <button
           onClick={scrollToTop}
           title="Back to top"
-          className="flex h-[36px] w-[36px] cursor-pointer items-center justify-center rounded-full border-none bg-accent-1/10 text-accent-1 transition-all duration-300 hover:bg-accent-1/20 hover:shadow-[0_0_12px_rgba(192,132,252,0.2)] max-md:h-[30px] max-md:w-[30px]"
+          className="flex h-[36px] w-[36px] cursor-pointer items-center justify-center rounded-full border-none bg-accent-1/10 text-accent-1 transition-all duration-300 hover:bg-accent-1/20 hover:shadow-[0_0_12px_rgba(176,184,66,0.2)] max-md:h-[30px] max-md:w-[30px]"
         >
           <ArrowUpIcon />
         </button>
