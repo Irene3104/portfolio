@@ -29,6 +29,12 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   authors: [{ name: "Seoyoon Kim" }],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Seoyoon Kim — Software Engineer",
     description:
