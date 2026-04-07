@@ -20,7 +20,7 @@ export const educations: Education[] = [
     school: "Jeonbuk National University",
     period: "Mar 2012 – Feb 2017",
     detail:
-      "Double major combining language expertise with international business — the foundation for working across Korea, Japan, and Australia.",
+      "Double major combining language expertise with international business.",
     badge: "Dual Degree",
   },
 ];
