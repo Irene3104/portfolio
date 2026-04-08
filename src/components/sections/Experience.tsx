@@ -41,13 +41,13 @@ function TimelineCard({
       <span
         className={`absolute -left-8 top-6 z-10 h-4 w-4 rounded-full border-[3px] border-accent-1 max-md:-left-6 max-md:h-3.5 max-md:w-3.5 ${
           index === 0
-            ? "bg-accent-1 shadow-[0_0_12px_rgba(176,184,66,0.4)]"
+            ? "bg-accent-1 shadow-[0_0_12px_rgba(57,255,85,0.4)]"
             : "bg-bg-primary"
         }`}
       />
 
       {/* Card */}
-      <div className="rounded-2xl border border-accent-1/8 bg-bg-card p-6 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_4px_24px_rgba(176,184,66,0.06)] max-md:p-5">
+      <div className="rounded-2xl border border-accent-1/8 bg-bg-card p-6 transition-all duration-300 hover:border-accent-1/20 hover:shadow-[0_4px_24px_rgba(57,255,85,0.06)] max-md:p-5">
         {/* Top row: date + current badge */}
         <div className="mb-3 flex items-center gap-3">
           <span className="flex items-center gap-1.5 text-[0.78rem] font-semibold uppercase tracking-widest text-accent-1">

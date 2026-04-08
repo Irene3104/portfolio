@@ -56,7 +56,7 @@ function RecCard({
         </p>
 
         <div className="flex items-center gap-3">
-          <div className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-gradient-to-br from-accent-1 to-accent-2 font-heading text-[0.9rem] font-bold text-[#0a0a0f]">
+          <div className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-gradient-to-br from-accent-1 to-accent-2 font-heading text-[0.9rem] font-bold text-[#080c08]">
             {rec.initials}
           </div>
           <div>
