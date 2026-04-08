@@ -83,18 +83,16 @@ function CtaCard({
       download={download || undefined}
       className={`group relative flex-1 overflow-hidden rounded-[18px] p-6 text-text-primary no-underline transition-transform duration-300 hover:-translate-y-1 cursor-pointer min-h-[120px] max-md:min-h-0 max-md:p-5 ${
         variant === "purple"
-          ? "bg-gradient-to-br from-[#7B7B22] to-[#B0B842] text-[#0c0d08]"
-          : "bg-gradient-to-br from-[#B0B842] to-[#D0D072] text-[#0c0d08]"
+          ? "bg-[#538C57] text-white hover:bg-[#468049]"
+          : "bg-[#538C57] text-white hover:bg-[#468049]"
       }`}
     >
       <span
         className="pointer-events-none absolute inset-0 rounded-[18px]"
         style={{
-          opacity: variant === "purple" ? 0.12 : 0.15,
+          opacity: 0.18,
           background:
-            variant === "purple"
-              ? "repeating-linear-gradient(135deg, transparent, transparent 30px, rgba(255,255,255,0.05) 30px, rgba(255,255,255,0.05) 32px), radial-gradient(ellipse at 30% 100%, rgba(255,255,255,0.15), transparent 60%)"
-              : "repeating-linear-gradient(-45deg, transparent, transparent 18px, rgba(255,255,255,0.08) 18px, rgba(255,255,255,0.08) 20px), radial-gradient(ellipse at 70% 90%, rgba(255,255,255,0.2), transparent 50%)",
+            "repeating-linear-gradient(135deg, transparent, transparent 24px, rgba(255,255,255,0.04) 24px, rgba(255,255,255,0.04) 26px)",
         }}
       />
       <span className="mb-3.5 block text-2xl">{icon}</span>
