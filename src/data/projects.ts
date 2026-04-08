@@ -32,7 +32,6 @@ export const projects: Project[] = [
     status: "live",
     statusLabel: "Live",
     gradient: "from-[#0a1a0e] to-[#1F8033]",
-    thumbnail: "/images/projects/saixan1.webp",
     gallery: [
       "/images/projects/saixan2.webp",
       "/images/projects/saixan1.webp",
@@ -57,8 +56,6 @@ export const projects: Project[] = [
     status: "live",
     statusLabel: "Live · 128 Users",
     gradient: "from-[#081408] to-[#2DB844]",
-    thumbnail: "/images/projects/bee-time1.webp",
-    thumbnailPosition: "center",
     gallery: [
       "/images/projects/bee-time1.webp",
       "/images/projects/bee-time2.webp",
@@ -84,8 +81,6 @@ export const projects: Project[] = [
     status: "completed",
     statusLabel: "Shipped",
     gradient: "from-[#0c1a0c] to-[#39FF55]",
-    thumbnail: "/images/projects/genoray.webp",
-    thumbnailPosition: "center",
     gallery: ["/images/projects/genoray.webp"],
   },
   {

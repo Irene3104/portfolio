@@ -81,20 +81,20 @@ function CtaCard({
       ref={magneticRef}
       href={href}
       download={download || undefined}
-      className={`group relative flex-1 overflow-hidden rounded-[18px] p-6 text-text-primary no-underline transition-transform duration-300 hover:-translate-y-1 cursor-pointer min-h-[120px] max-md:min-h-0 max-md:p-5 ${
+      className={`group relative flex-1 overflow-hidden rounded-[18px] p-6 no-underline transition-all duration-300 hover:-translate-y-1 cursor-pointer min-h-[120px] max-md:min-h-0 max-md:p-5 ${
         variant === "purple"
           ? "bg-gradient-to-br from-[#1F8033] to-[#39FF55] text-[#080c08]"
-          : "bg-gradient-to-br from-[#39FF55] to-[#66FF80] text-[#080c08]"
+          : "border-2 border-[#39FF55]/40 bg-[#080c08] text-[#39FF55] hover:border-[#39FF55] hover:shadow-[0_0_30px_rgba(57,255,85,0.2),inset_0_0_30px_rgba(57,255,85,0.05)]"
       }`}
     >
       <span
         className="pointer-events-none absolute inset-0 rounded-[18px]"
         style={{
-          opacity: variant === "purple" ? 0.12 : 0.15,
+          opacity: variant === "purple" ? 0.12 : 0.08,
           background:
             variant === "purple"
               ? "repeating-linear-gradient(135deg, transparent, transparent 30px, rgba(255,255,255,0.05) 30px, rgba(255,255,255,0.05) 32px), radial-gradient(ellipse at 30% 100%, rgba(255,255,255,0.15), transparent 60%)"
-              : "repeating-linear-gradient(-45deg, transparent, transparent 18px, rgba(255,255,255,0.08) 18px, rgba(255,255,255,0.08) 20px), radial-gradient(ellipse at 70% 90%, rgba(255,255,255,0.2), transparent 50%)",
+              : "repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(57,255,85,0.06) 3px, rgba(57,255,85,0.06) 4px), radial-gradient(ellipse at 50% 0%, rgba(57,255,85,0.1), transparent 60%)",
         }}
       />
       <span className="mb-3.5 block text-2xl">{icon}</span>
