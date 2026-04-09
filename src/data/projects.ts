@@ -88,12 +88,12 @@ export const projects: Project[] = [
     subtitle: "Real-time Cattle Monitoring System",
     tags: ["AI/ML", "Team Project", "UTS"],
     problem:
-      "A cattle farm needed a way to monitor livestock in real time across multiple CCTV feeds and get automated alerts when animals show abnormal behavior.",
+      "A cattle farm needed a way to detect abnormal livestock behaviour — such as prolonged inactivity or heat stress — across multiple video feeds, and alert farmers before conditions escalate.",
     action:
-      "Built the AI detection module using YOLOv8 for real-time cattle recognition from live camera feeds. The team built a React dashboard for multi-camera monitoring and a backend API to connect everything.",
+      "Owned the AI prototype: built the YOLOv8-based cattle detection pipeline with OpenCV for video analysis, outputting structured inference results consumed by the ML service and backend. The system follows a modular architecture — AI Prototype → ML Service → Backend API → React Frontend — connected via REST. Used recorded video files with an architecture designed to support real-time CCTV and multimodal inputs (video + audio).",
     result:
-      "Working prototype with real-time object detection, multi-camera dashboard, alert system, and video analysis upload. Presented as a capstone project at UTS.",
-    techStack: ["Python", "YOLOv8", "React", "Tailwind CSS", "Node.js", "REST API"],
+      "Delivered a working end-to-end prototype with real-time object detection, a multi-camera React dashboard, automated abnormal behaviour alerts, and video upload analysis. Demonstrated modular ML-backend-frontend integration as a UTS capstone project.",
+    techStack: ["Python", "YOLOv8", "OpenCV", "React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "REST API"],
     status: "completed",
     statusLabel: "Prototype",
     gradient: "from-[#0a1a0e] to-[#1F8033]",
