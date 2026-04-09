@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Seoyoon Kim — Software Engineer",
+  title: "Seoyoon Kim",
   description:
     "Full-stack engineer with production experience in enterprise finance, medical imaging, and workforce systems. Based in Sydney, Australia.",
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Seoyoon Kim — Software Engineer",
+    title: "Seoyoon Kim",
     description:
       "Full-stack engineer shipping production systems across enterprise finance, medical imaging, and workforce management.",
     type: "website",
