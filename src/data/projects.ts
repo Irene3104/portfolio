@@ -97,7 +97,7 @@ export const projects: Project[] = [
     status: "completed",
     statusLabel: "Prototype",
     gradient: "from-[#0a1a0e] to-[#1F8033]",
-    githubUrl: "https://github.com/Irene3104/AI_Cattle_Monitoring",
+    githubUrl: "https://github.com/Irene3104/smart-farm-monitoring",
   },
   {
     title: "UTS UniApp",
