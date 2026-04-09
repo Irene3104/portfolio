@@ -16,10 +16,9 @@ export const recommendations: Recommendation[] = [
     source: "Reference available on request",
   },
   {
-    quote:
-      "Bee-Time transformed how we manage staff across 5 stores. Seoyoon delivered a reliable, polished product and continues to improve it based on our real-world feedback.",
+    quote: "",
     name: "Eugene Jun",
-    role: "Director, JUNCAFE OPERA PTY LTD",
+    role: "CEO, JUNCAFE OPERA PTY LTD",
     initials: "EJ",
     source: "Reference available on request",
   },

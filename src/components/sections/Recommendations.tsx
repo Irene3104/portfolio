@@ -51,9 +51,15 @@ function RecCard({
           &ldquo;
         </span>
 
-        <p className="relative mb-5 text-[1.15rem] italic leading-[1.75] text-text-secondary">
-          &ldquo;{rec.quote}&rdquo;
-        </p>
+        {rec.quote ? (
+          <p className="relative mb-5 text-[1.15rem] italic leading-[1.75] text-text-secondary">
+            &ldquo;{rec.quote}&rdquo;
+          </p>
+        ) : (
+          <p className="relative mb-5 text-[1.05rem] leading-[1.75] text-text-tertiary/50">
+            Recommendation coming soon...
+          </p>
+        )}
 
         <div className="flex items-center gap-3">
           <div className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-gradient-to-br from-accent-1 to-accent-2 font-heading text-[0.9rem] font-bold text-[#080c08]">
