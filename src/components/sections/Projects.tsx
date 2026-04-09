@@ -327,8 +327,12 @@ function ProjectCard({
           <span
             className={`absolute right-3.5 top-3.5 rounded-full px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-wider ${
               project.status === "live"
-                ? "bg-[rgba(34,197,94,0.2)] text-[#4ade80]"
-                : "bg-accent-1/20 text-accent-3"
+                ? "bg-[rgba(251,191,36,0.2)] text-[#fbbf24] shadow-[0_0_10px_rgba(251,191,36,0.15)]"
+                : project.statusLabel === "Shipped"
+                  ? "bg-[rgba(96,165,250,0.2)] text-[#60a5fa] shadow-[0_0_10px_rgba(96,165,250,0.15)]"
+                  : project.statusLabel === "Prototype"
+                    ? "bg-[rgba(244,114,182,0.2)] text-[#f472b6] shadow-[0_0_10px_rgba(244,114,182,0.15)]"
+                    : "bg-[rgba(167,139,250,0.2)] text-[#a78bfa] shadow-[0_0_10px_rgba(167,139,250,0.15)]"
             }`}
           >
             {project.statusLabel}
