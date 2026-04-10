@@ -39,8 +39,6 @@ export const projects: Project[] = [
       "/images/projects/saixan4.webp",
     ],
     note: "Proprietary system. Architecture overview available on request.",
-    githubUrl: "https://github.com/Irene3104/SAIXAN",
-    demoUrl: "https://saixan.com",
   },
   {
     title: "Bee-Time",
@@ -64,8 +62,6 @@ export const projects: Project[] = [
       "/images/projects/bee-time5.webp",
       "/images/projects/bee-time6.webp",
     ],
-    githubUrl: "https://github.com/Irene3104/Bee-Time",
-    demoUrl: "https://project-bee-time-sandy.vercel.app",
   },
   {
     title: "DICOM Image Converter",
