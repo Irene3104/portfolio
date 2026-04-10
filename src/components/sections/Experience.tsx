@@ -77,7 +77,7 @@ function TimelineCard({
           {exp.techs.map((tech) => (
             <span
               key={tech}
-              className="rounded-full bg-accent-1/8 px-2.5 py-1 text-[0.72rem] text-accent-3"
+              className="rounded-full bg-accent-muted/10 px-2.5 py-1 text-[0.72rem] text-accent-muted"
             >
               {tech}
             </span>

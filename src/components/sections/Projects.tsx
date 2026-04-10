@@ -180,7 +180,7 @@ function CaseStudyModal({
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-accent-1/20 px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-wider text-accent-1"
+                className="rounded-full border border-accent-muted/20 px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-wider text-accent-muted"
               >
                 {tag}
               </span>
@@ -220,7 +220,7 @@ function CaseStudyModal({
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="rounded-full bg-accent-1/8 px-3 py-1 text-[0.78rem] text-accent-3"
+                className="rounded-full bg-accent-muted/10 px-3 py-1 text-[0.78rem] text-accent-muted"
               >
                 {tech}
               </span>
@@ -353,7 +353,7 @@ function ProjectCard({
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-accent-1/20 px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-wider text-accent-1"
+                className="rounded-full border border-accent-muted/20 px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-wider text-accent-muted"
               >
                 {tag}
               </span>

@@ -25,7 +25,7 @@ export default function Skills() {
                 {cat.items.map((item) => (
                   <span
                     key={item}
-                    className="cursor-default rounded-full border border-accent-1/12 px-4 py-[7px] text-[1.05rem] text-text-secondary transition-all duration-300 hover:border-accent-1 hover:text-accent-1 hover:shadow-[0_0_12px_rgba(57,255,85,0.1)]"
+                    className="cursor-default rounded-full border border-accent-muted/15 px-4 py-[7px] text-[1.05rem] text-accent-muted transition-all duration-300 hover:border-accent-1 hover:text-accent-1 hover:shadow-[0_0_12px_rgba(57,255,85,0.1)]"
                   >
                     {item}
                   </span>
