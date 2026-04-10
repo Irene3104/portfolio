@@ -13,7 +13,7 @@
   --accent-2: #2DB844;
   --accent-3: #66FF80;
   --accent-4: #1F8033;
-  --accent-muted: #8B9DAF;
+  --accent-muted: #A8B8CC;
   --gradient-1: linear-gradient(135deg, #39FF55, #66FF80);
   --gradient-2: linear-gradient(135deg, #2DB844, #39FF55);
   --gradient-3: linear-gradient(135deg, #1F8033, #39FF55);
@@ -157,7 +157,7 @@ body::before {
   --color-accent-2: #2DB844;
   --color-accent-3: #66FF80;
   --color-accent-4: #1F8033;
-  --color-accent-muted: #8B9DAF;
+  --color-accent-muted: #A8B8CC;
 
   --font-heading: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
