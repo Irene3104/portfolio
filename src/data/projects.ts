@@ -112,16 +112,16 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/JinLee0811/UTS_TeamProject_CLIUniApp-and-GUIUniApp_by_Python",
   },
   {
-    title: "Online Rent Car",
+    title: "Snapcar",
     subtitle: "Car Rental Web Application",
-    tags: ["PHP", "AWS", "Full-Stack"],
+    tags: ["PHP", "Full-Stack", "UTS"],
     problem:
       "Needed a web-based car rental system where users can browse vehicles, make reservations, and manage their bookings online.",
     action:
-      "Built a full booking flow with HTML/CSS/JS frontend and PHP backend. Implemented reservation management, order confirmations, and user booking history. Deployed on AWS Elastic Beanstalk.",
+      "Built a full booking flow with HTML/CSS/JS frontend and PHP backend. Implemented reservation management, order confirmations, and user booking history. Originally deployed on AWS Elastic Beanstalk, now hosted on InfinityFree for portfolio demo.",
     result:
-      "Functional car rental platform with end-to-end booking flow, deployed and running on AWS infrastructure.",
-    techStack: ["PHP", "JavaScript", "HTML/CSS", "AWS Elastic Beanstalk"],
+      "Functional car rental platform with end-to-end booking flow. Originally deployed on AWS infrastructure during the course, currently live as a demo.",
+    techStack: ["PHP", "JavaScript", "HTML/CSS", "MySQL"],
     status: "live",
     statusLabel: "Live",
     gradient: "from-[#0c1a0c] to-[#39FF55]",
