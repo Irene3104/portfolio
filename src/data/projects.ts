@@ -122,9 +122,10 @@ export const projects: Project[] = [
     result:
       "Functional car rental platform with end-to-end booking flow, deployed and running on AWS infrastructure.",
     techStack: ["PHP", "JavaScript", "HTML/CSS", "AWS Elastic Beanstalk"],
-    status: "completed",
-    statusLabel: "Academic",
+    status: "live",
+    statusLabel: "Live",
     gradient: "from-[#0c1a0c] to-[#39FF55]",
     githubUrl: "https://github.com/Irene3104/IP_As1_OnlineRentCar",
+    demoUrl: "http://snapcar.free.nf/",
   },
 ];
