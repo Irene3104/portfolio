@@ -329,10 +329,8 @@ function ProjectCard({
               project.status === "live"
                 ? "bg-[rgba(251,191,36,0.25)] text-[#fbbf24] shadow-[0_0_10px_rgba(251,191,36,0.15)]"
                 : project.statusLabel === "Shipped"
-                  ? "bg-[rgba(96,165,250,0.25)] text-[#60a5fa] shadow-[0_0_10px_rgba(96,165,250,0.15)]"
-                  : project.statusLabel === "Prototype"
-                    ? "bg-[rgba(244,114,182,0.25)] text-[#f472b6] shadow-[0_0_10px_rgba(244,114,182,0.15)]"
-                    : "bg-[rgba(167,139,250,0.25)] text-[#a78bfa] shadow-[0_0_10px_rgba(167,139,250,0.15)]"
+                  ? "bg-[rgba(244,114,182,0.25)] text-[#f472b6] shadow-[0_0_10px_rgba(244,114,182,0.15)]"
+                  : "bg-[rgba(167,139,250,0.25)] text-[#a78bfa] shadow-[0_0_10px_rgba(167,139,250,0.15)]"
             }`}
             style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
           >
