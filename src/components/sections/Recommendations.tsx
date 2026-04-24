@@ -41,10 +41,10 @@ function RecCard({
   }, [handleMove, handleLeave]);
 
   return (
-    <div>
+    <div className="h-full">
       <div
         ref={cardRef}
-        className="relative rounded-[20px] border border-accent-1/8 bg-bg-card p-7 transition-all duration-300 hover:border-accent-1/20 hover:-translate-y-0.5"
+        className="relative flex h-full flex-col rounded-[20px] border border-accent-1/8 bg-bg-card p-7 transition-all duration-300 hover:border-accent-1/20 hover:-translate-y-0.5"
       >
         {/* Decorative quote mark */}
         <span className="absolute right-6 top-4 font-[Georgia,serif] text-[4rem] leading-none text-accent-1/8">
@@ -52,11 +52,11 @@ function RecCard({
         </span>
 
         {rec.quote ? (
-          <p className="relative mb-5 text-[1.15rem] italic leading-[1.75] text-text-secondary">
+          <p className="relative mb-5 flex-1 text-[1.05rem] italic leading-[1.7] text-text-secondary">
             &ldquo;{rec.quote}&rdquo;
           </p>
         ) : (
-          <p className="relative mb-5 text-[1.05rem] leading-[1.75] text-text-tertiary/50">
+          <p className="relative mb-5 flex-1 text-[1.05rem] leading-[1.7] text-text-tertiary/50">
             Recommendation coming soon...
           </p>
         )}
@@ -93,7 +93,7 @@ export default function Recommendations() {
       <div className="mx-auto w-full max-w-[var(--max-w)]">
         <SectionHeader label="Recommendations" title="What People Say" />
 
-        <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-1 max-lg:max-w-[600px] max-md:gap-4">
+        <div className="grid auto-rows-fr grid-cols-3 gap-6 max-lg:grid-cols-1 max-lg:max-w-[600px] max-md:gap-4">
           {recommendations.map((rec, i) => (
             <RecCard key={rec.name} rec={rec} delay={0} />
           ))}
